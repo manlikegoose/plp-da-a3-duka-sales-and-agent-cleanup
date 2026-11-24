@@ -20,18 +20,6 @@ The agent notebook audits transaction data across uniqueness, consistency, valid
 
 **Agent row counts:** 612 source rows → 12 duplicate rows removed → 600 cleaned transaction rows. The cleaned output contains 600 unique IDs and 7 transactions with unknown agent references.
 
-## Repository contents
-
-- `generate_data.py` — both deterministic generators (Duka seed 2026; agent seed 44).
-- `duka_sales_exploration.ipynb` — sales inspection, Tasks 2–8 and interpretation.
-- `agent_cleanup.ipynb` — audit, cleaning, merge, summaries and Data Quality Report.
-- `cleaning_pipeline.py` — reusable function returning `(clean_df, log)`.
-- `excel/duka_branch_summary.xlsx` — SUMIFS branch revenue, XLOOKUP region mapping and branch/channel revenue summary.
-- `outputs/premium_online_coast_capital.csv` — filtered Premium online orders, exported without index.
-- `outputs/agent_transactions_clean.csv` — cleaned and merged transactions.
-- `requirements.txt` — Python dependencies.
-
-Raw generated CSVs are intentionally not committed; regenerate them from the script.
 
 ## Regenerate data
 
